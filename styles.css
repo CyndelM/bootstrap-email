@@ -1,15 +1,55 @@
-#nav-bar{
-    background-color: rgb(233, 180, 7);
+.btn-dark{
+    background-color: #FF6666;
+    
 }
-#profile-pic{
-    width: 10px;
+.thumbnail{
+    width: 45px;
+    margin: 2px;
+}
+
+#nav-bar{
+    background-color: #FFBD59;
+    color: 
 }
 #column-1{
-    background-color: rgb(231, 100, 70);
+    background-color: #FF6666;
 }
 #column-2{
-    background-color: rgb(17, 188, 231);
+    background-color: #2AB4D0;
 }
 #column-3{
-    background-color: rgb(114, 96, 152);
+    background-color: #726DA8;
+    /* margin-right: 5px; */
+}
+.form-check{
+    border: solid 1px #FFBD59
+    
+}
+.btn{
+    
+    margin: 10px;
+    border-radius: 0%;
+}
+.btn-info{
+    background-color: #FF6666;
+}
+.btn-dark{
+    background-color: #726DA8;
+    border-color: #2AB4D0;
+}
+#send-btn{
+    /* display: flex;
+    justify-content: right; */
+}
+.form-group{
+    padding-right: 12px;
+}
+.btn-group-vertical{
+    padding-right: 5px;
+}
+.heading{
+    text-align: center;
+}
+.btn-group{
+    justify-content: space-between;
 }

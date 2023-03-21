@@ -4,25 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap CSS goes here -->
+  <!-- Bootstrap CSS goes here -->git branch -M main
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!--your external CSS stylesheet goes here-->
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
   <title>Bootstrap Email Template</title>
 </head>
 <body>
   <!-- Flexbox Navigation Bar that stacks at Small Breakpoint -->
   <nav id="nav-bar" class="nav nav-pills flex-column flex-sm-row">
-    <img id="profile-pic" src="sarah-profile-pic.png" alt="Dr. Tillay's Profile Picture"
-    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Home</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="#">Programs</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="#">Education</a>
-    <a class="flex-sm-fill text-sm-center nav-link disabled">Messaging</a>
-  <!-- Column 1 Email Navigation Vertical Pill Box -->
+    <img class="thumbnail" id="floored-logo" src="Floored Logo.png" alt="Dr. Tillay's Profile Picture">
+    <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="#">| Home |</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">|  Programs  |</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">|  Education  |</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">|  Messaging  |</a>
+    <img class="thumbnail" id="profile-pic" src="sarah-profile-pic.png" alt="Dr. Tillay's Profile Picture">
   </nav>
-    <div class="row w-100">
-      <div id= column-1 class="col-sm-12 col-md-6 col-lg-2">
-        <div id=email-folder-nav class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <!-- Column 1 Email Navigation Vertical Pill Box -->
+    <div class="row">
+      <div id= column-1 class="col-sm-12 col-md-5 col-lg-2">
+        <div id=email-folder-nav class="btn-group-vertical d-flex justify-content-center" role="group" aria-label="Vertical button group">
           <button type="button" class="btn btn-dark">Compose</button>
           <button type="button" class="btn btn-dark">Inbox</button>
           <button type="button" class="btn btn-dark">Sent</button>
@@ -32,7 +34,8 @@
         </div>
       </div>
       <!-- Column 2- Newest Unread Message Displayed -->
-      <div id=column-2 class="col-sm-12 col-md-6 col-lg-3">
+      
+      <div id=column-2 class="col-sm-12 col-md-7 col-lg-3">
         <h1 class="heading column-2">Unread Messages</h1>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -41,6 +44,21 @@
             <b>Shelly Briar</b> : Hi Sarah, I had a quick question about my new exercise...
           </label>
         </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            3/22/23<br>
+            <b>Shelly Briar</b> : Hi Sarah, I had a quick question about my new exercise...
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            3/22/23<br>
+            <b>Shelly Briar</b> : Hi Sarah, I had a quick question about my new exercise...
+          </label>
+        </div>
+        
         <!-- Commented out the checked check-box below in case it is needed later -->
         <!-- <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
@@ -51,15 +69,32 @@
       </div>
       <!-- Window Opened from Column 1 Menu- Defaults to Template for Provider -->
       <div id=column-3 class="col-sm-12 col-md-12 col-lg-7">
-        <h2 class="heading column-3">Program Update</h2>
-        <p class="column-3">[Patient Name],<br><br>
+        <h1 class="heading column-3">Program Update</h2>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Patient Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Last name, First name">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Compose Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Dear [Patient Name],
 
-          I have updated your personalized plan of care. Please view your plan to review the changes and make the necessary adjustments to your daily routine. Feel free to contact me with any questions.<br>
-          Keep working hard every day on your goals until our next appointment. I want you to be floored by your progress!<br> <br>
-     
-          Kind regards,<br>
-          Dr. Sarah Tillay<br>
-          Floored Pelvic Health</p>
+      I have updated your personalized plan of care. Please view your plan to review the changes and make the necessary adjustments to your daily routine. Feel free to contact me with any questions.
+              
+      Keep working hard every day on your goals until our next appointment. I want you to be FLOORED by your progress!
+                            
+Best regards,
+Dr. Sarah Tillay, PT, DPT, PHC 
+Floored Pelvic Health"></textarea>
+          </div>
+        </form>
+        
+        <div class="btn-group d-flex">
+          <button type="button" class="btn btn-info" id="template-btn">Update Template</button>
+          <button type="button" class="btn btn-info" id="send-btn">Send Message</button>
+        </div>
+        
       </div>
     </div>
   </div>
